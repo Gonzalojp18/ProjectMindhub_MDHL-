@@ -1,0 +1,604 @@
+html * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* VARIABLES OF CARD */
+
+:root {
+    --bg: #E6E6E6;
+    --h: 20%;
+    --w:20%;
+    --fs: .8em;
+    --br: 30px 0 30px 0;
+    --mt: 2em;
+}
+
+
+/* header */
+/* Intension hacer del bg-image una animation incluyendo el h1/nav */
+
+
+/* BODY */
+
+body{
+        height: 100vh;
+        max-width: 100%;
+        font-family: 'Sintony', sans-serif;
+}
+
+
+/* TOP MENU OFICIAL SITE  */
+.mdhl{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: rgb(186, 136, 0);
+    color: #f3f3f3;
+    min-height: 1vh;
+    padding: 10px 15px;
+}
+
+.mdhl  span {
+    font-size: 1.5em;
+}
+
+/*  */
+
+/* HEADER LOGO AND H1&animation */
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 0 0 0 0px;
+    min-height: 30vh;
+    animation: players;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes players {
+    0%   {background-image: url(./assest/animation/animation5.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;}
+    25%  {background-image: url(./assest/animation/animation4.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;}
+    50%  {background-image: url(./assest/animation/animation3.png);
+        background-repeat: no-repeat;
+        background: position center;
+        background-size: cover;
+        max-width: 100%;}
+    75%  {background-image: url(./assest/animation/animation2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;}
+    100% {background-image: url(./assest/animation/animation1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;}
+}
+
+.header img {
+    width: 10%;
+    order: 1;
+}
+.header h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px black ;
+    color:rgb(240, 178, 6);
+}
+
+/* MENU OF NAVEGATION*/
+
+.boxNavBar nav {
+    background-color: #211915;;
+    height: 10vh;
+    /* position: fixed;
+    top: 0;
+    width: 100%; "
+    UN NAV QUE CUANDO SE HAGA SCROLL ADOPTE LA POSITION*/
+}
+
+.boxNavBar ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5em;
+}
+
+.boxNavBar ul li {
+    font-size: 1rem;
+    list-style: none;
+}
+
+.boxNavBar ul li a {
+    color: #f3f3f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* a:link {
+        background-color: red;
+}
+
+a:visited {
+        background-color: green;
+} */
+
+/* a:hover {
+    background-color: #000000;
+    padding: 20px;
+} */
+
+/* a:active {
+    background-color: rgb(240, 178, 6);
+    padding: 20px;
+} */
+
+/* pendiente por definir colores y efectos */
+
+/* style Section main of Upcoming Events in the Home */
+
+/* MAIN */
+main {
+    background-image: url(./assest/backgroundImage/Screenshot\ 2022-07-07\ 034344.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    min-height: 60vh;
+    max-width: 100%;
+    font-family: 'Sintony', sans-serif;
+}
+
+/* MAIN SECTION WITH 3 TYPE OF CONTENT */
+section.mainSection {
+    display: flex;
+    background-color: #f3f3f3;
+    max-width: 90vw;
+    min-height: 60vh;
+    margin: 0 auto 1em auto;
+    color: #625e5e;
+}
+
+/* UPCOMING EVENTS */
+article.firstArticle{
+    background-color: #E6E6E6;
+    font-size: .8em;
+    max-width: 100%;
+    min-height: 30vh;
+    border-radius: 30px 0 30px 0;
+    margin: 10px 5px 0 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+article.firstArticle h3{
+    background-color: #211915;
+    text-align: center;
+    color:rgb(240, 178, 6);
+    font-size: 1.5em;
+    border-radius: 30px 0 30px 0;
+}
+
+/* UPCOMING EVENTS */
+div.firstEvent, .secondEvent, .thirdEvent {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 20%;
+    max-width: 100%;
+    font-size: .9em;
+    line-height: 1.95em;
+    font-weight: bold;
+    border-radius: 30px 0 30px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+
+div.firstEvent:hover{
+    color: #f3f3f3;
+    text-align: center;
+    transform: scale(1.01);
+    color: red;
+}
+
+div.secondEvent:hover{
+    color: #f3f3f3;
+    text-align: center;
+    transform: scale(1.01);
+    color: red;
+}
+
+div.thirdEvent:hover{
+    color: #f3f3f3;
+    text-align: center;
+    transform: scale(1);
+    color: red;
+}
+/* FINISH UPCOMING EVENT */
+
+/* STYLE OF SECTION TEAM LEADER */
+
+.information{
+    max-width: 20%;
+    margin: 0 auto 0 auto;
+}
+
+article.box-leader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    max-width: 100%;
+    margin: auto;
+    font-size: .6em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    line-height: 1.75em;
+    min-height: 40vh;
+}
+
+article.box-leader h3{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align: center;
+    font-size: 1.5em;
+    max-width: 100%;
+    padding: 1em;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 5px 0 5px;
+    min-height: 20vh;
+    max-width: 100%;
+}
+
+.player img {
+    max-width: 30%;
+    height: 40%;
+    border-radius: 100%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.detail {
+    min-height: 20vh;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 10px;
+}
+
+.detail p {
+    line-height: 2;
+}
+
+.detail span {
+font-size: 4em;
+font-weight: 900;
+}
+
+/* FINISH STYLE OF TEAM LEADER */
+
+/* CENTRAL PUBLICATION OF THE MAIN  */
+.newEvents{
+    max-width: 60%;
+    font-size: 1em;
+    background-color: #FAFAFA;
+    margin: 0px auto 1em auto;
+}
+
+.newEvents article {
+padding: 1em 0;
+}
+
+.infoEvent {
+    padding: 10px 0 40px 0px;
+    margin:  5px auto 0 auto;
+    max-width: 90%;
+    min-height: 10vh;
+    font-size: 1.5em;
+}
+
+.infoEvent h3 {
+    font-size: 2em;
+}
+
+.infoEvent img:hover {
+    opacity: .2;
+}
+
+.newEvents span {
+    position: sticky;
+    /* top: 45rem;
+    left: 21.5rem; */
+    min-width: 48.5%;
+    min-height: 20vh;
+    color: white;
+    box-shadow: rgba(10, 10, 10, 0.40) 10px 90px 36px 48px inset;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+/* PENDING TO DEFINE STYLE OF THE PARAGRAF IN MAIN SECTION */
+
+.infoEvent p.mainParagraph {
+    font-size: .6em;;
+    line-height: 1.95em;
+}
+
+.infoEvent p {
+    padding: 2px 0 10px 0px;
+    margin:  1px auto 0 auto;
+    font-size: .8em;
+}
+
+.infoEvent img {
+    max-width: 100%;
+    min-height: 40vh;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+/* STYLE OF SECTION WITH 6 ARTICLE  */
+
+.otherNews {
+    background-color: #fafafa;
+    max-width: 100%;
+    min-height: 10vh;
+    padding: 5px 5px 5px 5px;
+}
+
+.otherNews h3{
+    color: #726d6d;
+    font-size: 1em;
+    padding: 2px;
+    line-height: 1em;
+}
+
+.containerNews {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+.box-news{
+    max-width: 17vw;
+    min-height: 40%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    min-height: 20vh;
+    margin: 0 5px 0 5px;
+    padding: 10px;
+}
+
+.box-news p {
+    font-size: .7em;
+    line-height: 1.3em;
+}
+
+.box-news img {
+    max-width: 100%;
+    min-height: 30vh;
+    border-radius: 10px;
+}
+
+/* SECTION RIGHT WITH INFORMATION ON HEADLINES */
+.moreInformation{
+    width: 20%;
+}
+
+.headlineSection {
+    max-width: 100%;
+    text-align: center;
+    font-size: .8em;
+    border-radius: 0px 30 0px 30;
+    min-height: 20vh;
+    margin: 10px auto 10px auto;
+    padding: 5px 5px 5px 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+article.headlineSection h3{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align: center;
+    font-size: 1.5em;
+    width: 100%;
+    padding: .5em;
+}
+
+.headlineSection ul li {
+    list-style: none;
+    line-height: 1.75em;
+    padding: 5px 5px;
+    display: flex;
+}
+
+.headlineSection a {
+text-decoration: none;
+color: #211915;
+margin: 5px;
+line-height: 1.85em;
+font-size: .9em;
+}
+
+/* STYLE OF CARD TEAM INFOR ARTICLE ON LEFT*/
+
+.containerAsides {
+    margin-top: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+aside.card-advertising{
+    background-color: #fafafa;
+    max-width: 90%;
+    margin: 2rem auto 0 auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    line-height: 1.65em;
+    min-height: 40vh;
+    font-size: 1em;
+}
+
+.card-advertising h3{
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+    padding: .3em;
+}
+
+.card-img {
+    margin: 20px 0;
+    padding: 0 5px 0 5px;
+    min-height: 20vh;
+    max-width: 100%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.card-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 20vh;
+    font-size: 2em;
+    margin: 5px;
+    padding: 5px 0 5px 0;
+}
+
+.card-detail a {
+        text-decoration: none;
+        color: #211915;
+        margin: 5px;
+        font-size: .4em;;
+        line-height: 1.95em;
+}
+
+/* FINISH TEAM INFO */
+
+.teamIcon img {
+    width: 10%;
+    padding: 1em;
+    margin: 0 0 0 5em;
+}
+
+.teamIcon h4{
+    text-align: center;
+    font-size: 2em;
+}
+
+/* STYLE OF SECTION DUCKS GAMING */
+
+div.card-detail p.pgaming {
+    font-size: 12px;
+}
+
+button {
+    align-items: center;
+    background-color: rgb(233, 114, 3);
+    padding: 10px 5px 10px 5px;
+    border-style: none;
+    font-size: .4em;
+}
+
+/* SECTION FOUNDING PARTNERS */
+
+section.containerPartner {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.title-card h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #211915;
+}
+
+.card-partner {
+    display: flex;
+    justify-content: space-around
+}
+
+.card-partner img {
+    width: 10%;
+    height: 10%;
+}
+
+.footer {
+    background-color:  #211915;
+    min-height: 10vh;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* STYLES OF ABOUT US */
+
+div.aboutUs {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    max-width: 50%;
+}
+
+div.aboutUs article {
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+}
+
+/* STYLE OF CONTACT */
+
+.box-redes span {
+    padding: 20px 0 20px 0;
+    margin: auto;
+}
+
+.contactUs {
+    margin: 30px;
+    padding: 30px;
+}
+
+.form label, input {
+    padding: 10px;
+    width: 80%;
+}
+
+
+/* style of section rules */
+
+div.rules {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    max-width: 50%;
+    margin: 10px 0 10px 0;
+}
+
+.rules article {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+}
+
+.rules article ol li {
+    padding: 10px 0 10px 0;
+    margin: 10px 0 10px 0;
+}
+
+/* PENDIENTE POR DEFINIR FORM Y DEMAS INFO EN VISTA */
+
+
