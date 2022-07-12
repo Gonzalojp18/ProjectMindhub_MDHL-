@@ -4,38 +4,30 @@ html * {
     box-sizing: border-box;
 }
 
-
 /* VARIABLES OF CARD */
-
-:root {
+/* I I should learn and practice more about variabe in css */
+/* :root {
     --bg: #E6E6E6;
     --h: 20%;
     --w:20%;
     --fs: .8em;
     --br: 30px 0 30px 0;
     --mt: 2em;
-}
-
-
-/* header */
-/* Intension hacer del bg-image una animation incluyendo el h1/nav */
-
+} */
 
 /* BODY */
-
 body{
         height: 100vh;
         max-width: 100%;
         font-family: 'Sintony', sans-serif;
 }
 
-
 /* TOP MENU OFICIAL SITE  */
 .mdhl{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: rgb(186, 136, 0);
+    background-color: rgb(223, 182, 3);
     color: #f3f3f3;
     min-height: 1vh;
     padding: 10px 15px;
@@ -52,7 +44,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     margin: 0 0 0 0px;
     min-height: 30vh;
     animation: players;
@@ -88,14 +80,19 @@ body{
         max-width: 100%;}
 }
 
+
 .header img {
-    width: 10%;
+    width: 15%;
     order: 1;
 }
 .header h1 {
     font-size: 3rem;
     text-shadow: 2px 2px black ;
     color:rgb(240, 178, 6);
+}
+
+.titleSection h1{
+    text-align: center;
 }
 
 /* MENU OF NAVEGATION*/
@@ -126,22 +123,12 @@ body{
     font-weight: bold;
 }
 
-/* a:link {
-        background-color: red;
+li:hover {
+    background-color: #5d5a5a;
 }
 
-a:visited {
-        background-color: green;
-} */
-
-/* a:hover {
-    background-color: #000000;
-    padding: 20px;
-} */
-
-/* a:active {
+/* li:active {
     background-color: rgb(240, 178, 6);
-    padding: 20px;
 } */
 
 /* pendiente por definir colores y efectos */
@@ -226,7 +213,6 @@ div.thirdEvent:hover{
     transform: scale(1);
     color: red;
 }
-/* FINISH UPCOMING EVENT */
 
 /* STYLE OF SECTION TEAM LEADER */
 
@@ -287,8 +273,6 @@ font-size: 4em;
 font-weight: 900;
 }
 
-/* FINISH STYLE OF TEAM LEADER */
-
 /* CENTRAL PUBLICATION OF THE MAIN  */
 .newEvents{
     max-width: 60%;
@@ -319,8 +303,6 @@ padding: 1em 0;
 
 .newEvents span {
     position: sticky;
-    /* top: 45rem;
-    left: 21.5rem; */
     min-width: 48.5%;
     min-height: 20vh;
     color: white;
@@ -432,7 +414,7 @@ line-height: 1.85em;
 font-size: .9em;
 }
 
-/* STYLE OF CARD TEAM INFOR ARTICLE ON LEFT*/
+/* STYLE OF CARD TEAM and INFO ARTICLE ON LEFT*/
 
 .containerAsides {
     margin-top: 1rem;
@@ -576,6 +558,13 @@ div.aboutUs article {
     width: 80%;
 }
 
+button {
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 700;
+}
+
 
 /* style of section rules */
 
@@ -597,6 +586,72 @@ div.rules {
 .rules article ol li {
     padding: 10px 0 10px 0;
     margin: 10px 0 10px 0;
+}
+
+
+/* STYLE OF TABLE OF GAME INFORMATION */
+
+caption {
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    padding-top: 1em;
+}
+
+caption span {
+    font-size: 2em;
+}
+
+.podcast {
+    max-height: 75vh;
+    width: 20%;
+}
+
+div.gameInformation {
+    overflow-x:auto;
+    background-color: #fafafa;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+thead tr th {
+    color: #211915;
+    padding: 10px;
+    text-align: center;
+}
+
+thead tr:nth-child(odd){
+    background-color: rgb(223, 182, 3);
+}
+
+tr nth:nth-child(n-2) {
+    background-color: #e4dfdf;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(225, 223, 223);
+}
+
+
+tbody tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+.iconTeam img{
+    max-width: 5vw;
+    border-radius: 50%;
+}
+
+.extraInformation {
+    color: #000000;
+    padding: 20px;
+    margin: 10px;
+    width:60%;
 }
 
 /* PENDIENTE POR DEFINIR FORM Y DEMAS INFO EN VISTA */
