@@ -37,6 +37,12 @@ body{
     font-size: 1.5em;
 }
 
+div.mdhl a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+
 /*  */
 
 /* HEADER LOGO AND H1&animation */
@@ -298,7 +304,7 @@ padding: 1em 0;
 }
 
 .infoEvent img:hover {
-    opacity: .2;
+    opacity: .6;
 }
 
 .newEvents span {
@@ -561,7 +567,7 @@ div.aboutUs article {
 button {
     padding: 20px;
     margin-top: 20px;
-    font-size: 1em;
+    font-size: .6em;
     font-weight: 700;
 }
 
@@ -655,5 +661,99 @@ tbody tr td {
 }
 
 /* PENDIENTE POR DEFINIR FORM Y DEMAS INFO EN VISTA */
+
+h5{
+    text-align: center;
+    font-size: 2em;
+    padding: 1em;
+}
+
+div.titleForm img {
+    position: sticky;
+    left: 40rem;
+    width: 10%;
+}
+
+h6 {
+    font-size:1em;
+    padding: 1em;
+}
+
+legend {
+    width: 40rem;
+    font-size: 1em;
+}
+
+input  {
+    width: 50%;
+}
+
+section.form {
+    max-width: 80vw;
+    min-height: 60vh;
+    margin: 0 auto 1em auto;
+    color: #625e5e;
+    background-color: #c5c4c4;
+}
+
+.name{
+    display: flex;
+}
+.address {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    padding: .5em;
+}
+
+.grade legend {
+    font-size: 1.5em;
+}
+
+.grade {
+    display: flex;
+}
+
+
+.date {
+    display: flex;
+    font-size: 2em;
+    width: 100%;
+    font-size: .6em;
+}
+
+.date legend {
+    font-size: 1.5em;
+}
+
+
+.date input {
+    width: 5%;
+
+}
+
+
+.school {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text {
+    font-size: 1.5em;
+    margin: 1rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+    color:rgb(240, 178, 6);
+}
+
+
+
+
+
+
+
+
 
 
