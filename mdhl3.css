@@ -42,7 +42,6 @@ div.mdhl a {
     color: #f3f3f3;
 }
 
-
 /*  */
 
 /* HEADER LOGO AND H1&animation */
@@ -85,7 +84,6 @@ div.mdhl a {
         background-size: cover;
         max-width: 100%;}
 }
-
 
 .header img {
     width: 15%;
@@ -163,6 +161,10 @@ section.mainSection {
 }
 
 /* UPCOMING EVENTS */
+h4{
+    font-size: 2em;
+}
+
 article.firstArticle{
     background-color: #E6E6E6;
     font-size: .8em;
@@ -189,7 +191,6 @@ div.firstEvent, .secondEvent, .thirdEvent {
     align-items: center;
     min-height: 20%;
     max-width: 100%;
-    font-size: .9em;
     line-height: 1.95em;
     font-weight: bold;
     border-radius: 30px 0 30px 0;
@@ -693,12 +694,13 @@ section.form {
     min-height: 60vh;
     margin: 0 auto 1em auto;
     color: #625e5e;
-    background-color: #c5c4c4;
+    background-color: #e3e1e1;
 }
 
 .name{
     display: flex;
 }
+
 .address {
     display: flex;
     flex-direction: column;
@@ -714,7 +716,6 @@ section.form {
     display: flex;
 }
 
-
 .date {
     display: flex;
     font-size: 2em;
@@ -726,12 +727,9 @@ section.form {
     font-size: 1.5em;
 }
 
-
 .date input {
     width: 5%;
-
 }
-
 
 .school {
     display: flex;
