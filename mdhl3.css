@@ -102,12 +102,8 @@ div.mdhl a {
 /* MENU OF NAVEGATION*/
 
 .boxNavBar nav {
-    background-color: #211915;;
+    background-color: #211915;
     height: 10vh;
-    /* position: fixed;
-    top: 0;
-    width: 100%; "
-    UN NAV QUE CUANDO SE HAGA SCROLL ADOPTE LA POSITION*/
 }
 
 .boxNavBar ul {
@@ -138,6 +134,7 @@ li:hover {
 /* pendiente por definir colores y efectos */
 
 /* style Section main of Upcoming Events in the Home */
+
 
 /* MAIN */
 main {
@@ -198,7 +195,6 @@ div.firstEvent, .secondEvent, .thirdEvent {
     margin-top: 10px;
     padding: 0 20px;
 }
-
 
 div.firstEvent:hover{
     color: #f3f3f3;
@@ -281,6 +277,7 @@ font-weight: 900;
 }
 
 /* CENTRAL PUBLICATION OF THE MAIN  */
+
 .newEvents{
     max-width: 60%;
     font-size: 1em;
